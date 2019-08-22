@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".PasscodeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/textViewBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Enter Passcode"
+        android:theme="@style/plainText" />
+
+    <me.philio.pinentry.PinEntryView
+        android:id="@+id/pin_entry_simple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:accentType="all"
+        app:digitBackground="@android:color/white"
+        app:digitTextColor="@color/colorStarbucksGreen"
+        app:digitElevation="10dp" />
+
+    <LinearLayout
+        android:id="@+id/btnsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="1" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="2" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="4" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="5" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="7" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="8" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="_" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="0" />
+
+            <Button android:onClick="keypadPress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="&lt;" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

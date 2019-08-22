@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/cardId"
+        style="@style/plainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Make a Payment with Card : 000000000" />
+
+    <Button
+        android:id="@+id/button_scan_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Code" />
+
+    <EditText
+        android:id="@+id/edittext_item_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Item Name"/>
+
+    <EditText
+        android:id="@+id/edittext_item_price"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Item Price"
+        android:inputType="number"
+        android:digits="1234567890." />
+
+    <Button
+        android:id="@+id/button_pay_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay Now" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Payment" />
+
+</LinearLayout>

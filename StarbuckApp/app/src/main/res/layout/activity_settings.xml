@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/button_add_card_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Card"
+        />
+
+    <Button
+        android:id="@+id/button_billing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Billing"
+        />
+
+    <Button
+        android:id="@+id/button_passcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Passcode" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="          "
+        style="@style/plainText" />
+
+    <Button
+        android:id="@+id/button_about_terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About | Terms"
+        />
+
+    <Button
+        android:id="@+id/button_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <title>Create New Item</title>
+    <style>
+        input {
+            font-size: 30px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="myForm" method="post" action="javascript:void(0)" onsubmit="return mySubmitFunction();">
+        <input name="item_name" placeholder="Item Name" required><br>
+        <input name="item_price" placeholder="Item Price" type="number" step="0.01" required><br>
+        <input type="submit" value="Generate Item">
+    </form>
+
+    <div id="qrcode"></div>
+
+
+    <script>
+
+
+        function mySubmitFunction() {
+            console.log("FormSubmitting");
+            $.post("/generateItem", $('#myForm').serialize(), function (data) {
+                console.log(data);
+                $('#qrcode').html("");
+                $('#qrcode').qrcode(JSON.stringify(data));
+
+            });
+            return false;
+        }
+    </script>
+</body>
+
+</html>

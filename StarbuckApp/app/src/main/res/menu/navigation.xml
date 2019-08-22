@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group"
+        android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/navigation_my_cards"
+        android:icon="@drawable/ic_card"
+        android:title="MyCards" />
+
+    <item
+        android:id="@+id/navigation_payments"
+        android:icon="@drawable/ic_payment"
+        android:title="Payment" />
+
+    <item
+        android:id="@+id/navigation_my_rewards"
+        android:icon="@drawable/ic_rewards"
+        android:title="Rewards" />
+    <item
+        android:id="@+id/navigation_stores"
+        android:icon="@drawable/ic_stores"
+        android:title="Stores" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="Settings" />
+
+    </group>
+
+</menu>

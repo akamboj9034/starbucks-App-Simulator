@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        />
+
+    <Button
+        android:id="@+id/button_reload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reload"
+        />
+
+    <Button
+        android:id="@+id/button_auto_reload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto Reload"
+        />
+
+    <Button
+        android:id="@+id/button_transactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        />
+
+</LinearLayout>

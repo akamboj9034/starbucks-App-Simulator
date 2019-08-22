@@ -1,0 +1,52 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+	<title>Create New Card</title>
+	<style>
+		select {
+			font-size: 30px;
+			width: 300px;
+			height: 40px;
+		}
+
+		input {
+			font-size: 30px;
+			height: 40px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<form id="myForm" method="post" action="javascript:void(0)" onsubmit="return mySubmitFunction();">
+		<select name="dollars" required>
+			<option value="10">$10</option>
+			<option value="25">$25</option>
+			<option value="50">$50</option>
+			<option value="100">$100</option>
+		</select>
+		<input type="submit" value="Generate Card">
+	</form>
+
+	<div id="qrcode"></div>
+
+
+	<script>
+
+
+		function mySubmitFunction() {
+			console.log("FormSubmitting");
+			$.post("/generateCard", $('#myForm').serialize(), function (data) {
+				console.log(data);
+				$('#qrcode').html("");
+				$('#qrcode').qrcode(JSON.stringify(data));
+
+			});
+			return false;
+		}
+	</script>
+</body>
+
+</html>

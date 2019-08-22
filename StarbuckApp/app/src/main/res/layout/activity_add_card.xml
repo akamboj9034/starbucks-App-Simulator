@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <TextView
+        style="@style/plainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add Card" />
+
+    <Button
+        android:id="@+id/button_scan_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Card" />
+
+
+    <EditText
+        android:id="@+id/edittext_card_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Card ID"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:maxLength="9" />
+
+    <EditText
+        android:id="@+id/edittext_card_code"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Card Code"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:maxLength="3" />
+
+    <EditText
+        android:id="@+id/edittext_card_balance"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Card Balance"
+        android:inputType="number"
+        android:digits="1234567890." />
+
+    <Button
+        android:id="@+id/button_add_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Card" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel" />
+
+</LinearLayout>
